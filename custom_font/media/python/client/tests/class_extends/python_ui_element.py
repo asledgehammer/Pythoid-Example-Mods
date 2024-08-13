@@ -8,7 +8,7 @@ class PythonUIElement(UIElement):
     def __init__(self):
         super(PythonUIElement, self).__init__()
         print("Adding AngelCodeFont..")
-        mod = LuaManager.GlobalObject.getModInfoByID('pymod')    
+        mod = LuaManager.GlobalObject.getModInfoByID('pythoid_example_custom_fonts')    
         modDir = mod.getDir()
         self.font = AngelCodeFont(
             modDir + '/media/fonts/daggersquare.fnt',
